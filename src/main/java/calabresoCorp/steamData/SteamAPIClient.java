@@ -34,6 +34,7 @@ public class SteamAPIClient {
             JsonNode jogos = jsonNodeAppList.get("applist").get("apps");
 
             int appId = -1;
+
             for (JsonNode jogo : jogos) {
                 if (jogo.get("name").asText().equalsIgnoreCase(nomeJogoProcurado)) {
                     System.out.println("AppID: " + jogo.get("appid").asInt());
