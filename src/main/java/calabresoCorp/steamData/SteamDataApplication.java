@@ -10,5 +10,5 @@ public class SteamDataApplication {
 		SpringApplication.run(SteamDataApplication.class, args);
 	}
 
-	
+
 }
